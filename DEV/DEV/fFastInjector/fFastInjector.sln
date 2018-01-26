@@ -1,0 +1,93 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30110.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestsAndTestRigs", "TestsAndTestRigs", "{93362A04-CB35-438F-840A-D4A097677F9F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F5B9958D-C852-42F9-9267-1F56F7A723EA}"
+	ProjectSection(SolutionItems) = preProject
+		Performance1.psess = Performance1.psess
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fFastInjector", "fFastInjector.csproj", "{B56B326F-34B1-4383-89ED-6886B20850E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fFastInjectorTests", "..\fFastInjectorTests\fFastInjectorTests.csproj", "{435C522F-EDA0-4B79-9311-8A8EC26D4DB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PerformanceTesting", "..\PerformanceTesting\PerformanceTesting.csproj", "{595C21C2-79E9-48DC-AC16-FF6586B5E842}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fFastInjector-MVC", "..\fFastInjector-MVC\fFastInjector-MVC.csproj", "{F3E9D135-3D63-46C0-9211-A1C6B8FB19FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fFastInjector-PowerTools", "..\fFastInjector-PowerTools\fFastInjector-PowerTools.csproj", "{11034BE9-ABCD-484E-8D09-DAC886415B24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExecutableHost", "..\ExecutableHost\ExecutableHost.csproj", "{9BD70A9B-118D-44EB-90D3-10327BEE85D1}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs21
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = fFastInjector.csproj
+		SccLocalPath1 = .
+		SccProjectUniqueName2 = ..\\fFastInjectorTests\\fFastInjectorTests.csproj
+		SccProjectTopLevelParentUniqueName2 = fFastInjector.sln
+		SccProjectName2 = ../fFastInjectorTests
+		SccLocalPath2 = ..\\fFastInjectorTests
+		SccProjectUniqueName3 = ..\\PerformanceTesting\\PerformanceTesting.csproj
+		SccProjectTopLevelParentUniqueName3 = fFastInjector.sln
+		SccProjectName3 = ../PerformanceTesting
+		SccLocalPath3 = ..\\PerformanceTesting
+		SccProjectUniqueName4 = ..\\fFastInjector-MVC\\fFastInjector-MVC.csproj
+		SccProjectName4 = ../fFastInjector-MVC
+		SccLocalPath4 = ..\\fFastInjector-MVC
+		SccProjectUniqueName5 = ..\\fFastInjector-PowerTools\\fFastInjector-PowerTools.csproj
+		SccProjectName5 = ../fFastInjector-PowerTools
+		SccLocalPath5 = ..\\fFastInjector-PowerTools
+		SccProjectUniqueName6 = ..\\ExecutableHost\\ExecutableHost.csproj
+		SccProjectTopLevelParentUniqueName6 = fFastInjector.sln
+		SccProjectName6 = ../ExecutableHost
+		SccLocalPath6 = ..\\ExecutableHost
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B56B326F-34B1-4383-89ED-6886B20850E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B56B326F-34B1-4383-89ED-6886B20850E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B56B326F-34B1-4383-89ED-6886B20850E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B56B326F-34B1-4383-89ED-6886B20850E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{435C522F-EDA0-4B79-9311-8A8EC26D4DB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{435C522F-EDA0-4B79-9311-8A8EC26D4DB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{435C522F-EDA0-4B79-9311-8A8EC26D4DB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{435C522F-EDA0-4B79-9311-8A8EC26D4DB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{595C21C2-79E9-48DC-AC16-FF6586B5E842}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{595C21C2-79E9-48DC-AC16-FF6586B5E842}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{595C21C2-79E9-48DC-AC16-FF6586B5E842}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{595C21C2-79E9-48DC-AC16-FF6586B5E842}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3E9D135-3D63-46C0-9211-A1C6B8FB19FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3E9D135-3D63-46C0-9211-A1C6B8FB19FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3E9D135-3D63-46C0-9211-A1C6B8FB19FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3E9D135-3D63-46C0-9211-A1C6B8FB19FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11034BE9-ABCD-484E-8D09-DAC886415B24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11034BE9-ABCD-484E-8D09-DAC886415B24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11034BE9-ABCD-484E-8D09-DAC886415B24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11034BE9-ABCD-484E-8D09-DAC886415B24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BD70A9B-118D-44EB-90D3-10327BEE85D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BD70A9B-118D-44EB-90D3-10327BEE85D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BD70A9B-118D-44EB-90D3-10327BEE85D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BD70A9B-118D-44EB-90D3-10327BEE85D1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{435C522F-EDA0-4B79-9311-8A8EC26D4DB5} = {93362A04-CB35-438F-840A-D4A097677F9F}
+		{595C21C2-79E9-48DC-AC16-FF6586B5E842} = {93362A04-CB35-438F-840A-D4A097677F9F}
+		{9BD70A9B-118D-44EB-90D3-10327BEE85D1} = {93362A04-CB35-438F-840A-D4A097677F9F}
+	EndGlobalSection
+	GlobalSection(NDepend) = preSolution
+		Project = ".\fFastInjector.ndproj"
+	EndGlobalSection
+EndGlobal

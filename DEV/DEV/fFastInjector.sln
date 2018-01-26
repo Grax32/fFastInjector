@@ -1,0 +1,137 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestsAndTestRigs", "TestsAndTestRigs", "{93362A04-CB35-438F-840A-D4A097677F9F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F5B9958D-C852-42F9-9267-1F56F7A723EA}"
+	ProjectSection(SolutionItems) = preProject
+		Performance1.psess = Performance1.psess
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fFastInjector", "fFastInjector\fFastInjector.csproj", "{B56B326F-34B1-4383-89ED-6886B20850E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fFastInjectorTests", "fFastInjectorTests\fFastInjectorTests.csproj", "{435C522F-EDA0-4B79-9311-8A8EC26D4DB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fFastInjector-MVC", "fFastInjector-MVC\fFastInjector-MVC.csproj", "{F3E9D135-3D63-46C0-9211-A1C6B8FB19FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fFastInjector-PowerTools", "fFastInjector-PowerTools\fFastInjector-PowerTools.csproj", "{11034BE9-ABCD-484E-8D09-DAC886415B24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExecutableHost", "ExecutableHost\ExecutableHost.csproj", "{9BD70A9B-118D-44EB-90D3-10327BEE85D1}"
+EndProject
+Project("{7CF6DF6D-3B04-46F8-A40B-537D21BCA0B4}") = "fFastInjectorDocumentation", "Documentation\fFastInjectorDocumentation.shfbproj", "{40111970-5982-4204-A9A6-30B730E4EE13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentationSampleCode", "DocumentationSampleCode\DocumentationSampleCode.csproj", "{C4B721FC-199A-48CB-9864-AF442D89C93A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NuGetPackages", "NuGetPackages", "{D7261DE1-B102-4400-919C-BAB7CE73719E}"
+	ProjectSection(SolutionItems) = preProject
+		NugetPackages\fFastInjector-Embedded.0.8.2.nupkg = NugetPackages\fFastInjector-Embedded.0.8.2.nupkg
+		NugetPackages\fFastInjector-Embedded.1.0.1.nupkg = NugetPackages\fFastInjector-Embedded.1.0.1.nupkg
+		NugetPackages\fFastInjector-MVC.0.8.1.nupkg = NugetPackages\fFastInjector-MVC.0.8.1.nupkg
+		NugetPackages\fFastInjector-MVC.1.0.1.nupkg = NugetPackages\fFastInjector-MVC.1.0.1.nupkg
+		NugetPackages\fFastInjector.0.8.1.nupkg = NugetPackages\fFastInjector.0.8.1.nupkg
+		NugetPackages\fFastInjector.1.0.1.nupkg = NugetPackages\fFastInjector.1.0.1.nupkg
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs21
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = fFastInjector\\fFastInjector.csproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = fFastInjector\\
+		SccProjectUniqueName2 = fFastInjectorTests\\fFastInjectorTests.csproj
+		SccProjectTopLevelParentUniqueName2 = fFastInjector.sln
+		SccProjectName2 = fFastInjectorTests
+		SccLocalPath2 = fFastInjectorTests
+		SccProjectUniqueName3 = fFastInjector-MVC\\fFastInjector-MVC.csproj
+		SccProjectName3 = fFastInjector-MVC
+		SccLocalPath3 = fFastInjector-MVC
+		SccProjectUniqueName4 = fFastInjector-PowerTools\\fFastInjector-PowerTools.csproj
+		SccProjectName4 = fFastInjector-PowerTools
+		SccLocalPath4 = fFastInjector-PowerTools
+		SccProjectUniqueName5 = ExecutableHost\\ExecutableHost.csproj
+		SccProjectTopLevelParentUniqueName5 = fFastInjector.sln
+		SccProjectName5 = ExecutableHost
+		SccLocalPath5 = ExecutableHost
+		SccProjectUniqueName6 = Documentation\\fFastInjectorDocumentation.shfbproj
+		SccProjectName6 = Documentation
+		SccLocalPath6 = Documentation
+		SccProjectUniqueName7 = DocumentationSampleCode\\DocumentationSampleCode.csproj
+		SccProjectTopLevelParentUniqueName7 = fFastInjector.sln
+		SccProjectName7 = DocumentationSampleCode
+		SccLocalPath7 = DocumentationSampleCode
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		CreateDocs|Any CPU = CreateDocs|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		DebugRegression|Any CPU = DebugRegression|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B56B326F-34B1-4383-89ED-6886B20850E0}.CreateDocs|Any CPU.ActiveCfg = CreateDocs|Any CPU
+		{B56B326F-34B1-4383-89ED-6886B20850E0}.CreateDocs|Any CPU.Build.0 = CreateDocs|Any CPU
+		{B56B326F-34B1-4383-89ED-6886B20850E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B56B326F-34B1-4383-89ED-6886B20850E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B56B326F-34B1-4383-89ED-6886B20850E0}.DebugRegression|Any CPU.ActiveCfg = DebugRegression|Any CPU
+		{B56B326F-34B1-4383-89ED-6886B20850E0}.DebugRegression|Any CPU.Build.0 = DebugRegression|Any CPU
+		{B56B326F-34B1-4383-89ED-6886B20850E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B56B326F-34B1-4383-89ED-6886B20850E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{435C522F-EDA0-4B79-9311-8A8EC26D4DB5}.CreateDocs|Any CPU.ActiveCfg = CreateDocs|Any CPU
+		{435C522F-EDA0-4B79-9311-8A8EC26D4DB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{435C522F-EDA0-4B79-9311-8A8EC26D4DB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{435C522F-EDA0-4B79-9311-8A8EC26D4DB5}.DebugRegression|Any CPU.ActiveCfg = DebugRegression|Any CPU
+		{435C522F-EDA0-4B79-9311-8A8EC26D4DB5}.DebugRegression|Any CPU.Build.0 = DebugRegression|Any CPU
+		{435C522F-EDA0-4B79-9311-8A8EC26D4DB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{435C522F-EDA0-4B79-9311-8A8EC26D4DB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3E9D135-3D63-46C0-9211-A1C6B8FB19FC}.CreateDocs|Any CPU.ActiveCfg = CreateDocs|Any CPU
+		{F3E9D135-3D63-46C0-9211-A1C6B8FB19FC}.CreateDocs|Any CPU.Build.0 = CreateDocs|Any CPU
+		{F3E9D135-3D63-46C0-9211-A1C6B8FB19FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3E9D135-3D63-46C0-9211-A1C6B8FB19FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3E9D135-3D63-46C0-9211-A1C6B8FB19FC}.DebugRegression|Any CPU.ActiveCfg = DebugRegression|Any CPU
+		{F3E9D135-3D63-46C0-9211-A1C6B8FB19FC}.DebugRegression|Any CPU.Build.0 = DebugRegression|Any CPU
+		{F3E9D135-3D63-46C0-9211-A1C6B8FB19FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3E9D135-3D63-46C0-9211-A1C6B8FB19FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11034BE9-ABCD-484E-8D09-DAC886415B24}.CreateDocs|Any CPU.ActiveCfg = CreateDocs|Any CPU
+		{11034BE9-ABCD-484E-8D09-DAC886415B24}.CreateDocs|Any CPU.Build.0 = CreateDocs|Any CPU
+		{11034BE9-ABCD-484E-8D09-DAC886415B24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11034BE9-ABCD-484E-8D09-DAC886415B24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11034BE9-ABCD-484E-8D09-DAC886415B24}.DebugRegression|Any CPU.ActiveCfg = DebugRegression|Any CPU
+		{11034BE9-ABCD-484E-8D09-DAC886415B24}.DebugRegression|Any CPU.Build.0 = DebugRegression|Any CPU
+		{11034BE9-ABCD-484E-8D09-DAC886415B24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11034BE9-ABCD-484E-8D09-DAC886415B24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BD70A9B-118D-44EB-90D3-10327BEE85D1}.CreateDocs|Any CPU.ActiveCfg = CreateDocs|Any CPU
+		{9BD70A9B-118D-44EB-90D3-10327BEE85D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BD70A9B-118D-44EB-90D3-10327BEE85D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BD70A9B-118D-44EB-90D3-10327BEE85D1}.DebugRegression|Any CPU.ActiveCfg = DebugRegression|Any CPU
+		{9BD70A9B-118D-44EB-90D3-10327BEE85D1}.DebugRegression|Any CPU.Build.0 = DebugRegression|Any CPU
+		{9BD70A9B-118D-44EB-90D3-10327BEE85D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BD70A9B-118D-44EB-90D3-10327BEE85D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40111970-5982-4204-A9A6-30B730E4EE13}.CreateDocs|Any CPU.ActiveCfg = CreateDocs|Any CPU
+		{40111970-5982-4204-A9A6-30B730E4EE13}.CreateDocs|Any CPU.Build.0 = CreateDocs|Any CPU
+		{40111970-5982-4204-A9A6-30B730E4EE13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40111970-5982-4204-A9A6-30B730E4EE13}.DebugRegression|Any CPU.ActiveCfg = DebugRegression|Any CPU
+		{40111970-5982-4204-A9A6-30B730E4EE13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4B721FC-199A-48CB-9864-AF442D89C93A}.CreateDocs|Any CPU.ActiveCfg = CreateDocs|Any CPU
+		{C4B721FC-199A-48CB-9864-AF442D89C93A}.CreateDocs|Any CPU.Build.0 = CreateDocs|Any CPU
+		{C4B721FC-199A-48CB-9864-AF442D89C93A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4B721FC-199A-48CB-9864-AF442D89C93A}.DebugRegression|Any CPU.ActiveCfg = DebugRegression|Any CPU
+		{C4B721FC-199A-48CB-9864-AF442D89C93A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4B721FC-199A-48CB-9864-AF442D89C93A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{435C522F-EDA0-4B79-9311-8A8EC26D4DB5} = {93362A04-CB35-438F-840A-D4A097677F9F}
+		{9BD70A9B-118D-44EB-90D3-10327BEE85D1} = {93362A04-CB35-438F-840A-D4A097677F9F}
+		{C4B721FC-199A-48CB-9864-AF442D89C93A} = {93362A04-CB35-438F-840A-D4A097677F9F}
+		{D7261DE1-B102-4400-919C-BAB7CE73719E} = {F5B9958D-C852-42F9-9267-1F56F7A723EA}
+	EndGlobalSection
+	GlobalSection(NDepend) = preSolution
+		Project = ".\fFastInjector.ndproj"
+	EndGlobalSection
+EndGlobal
