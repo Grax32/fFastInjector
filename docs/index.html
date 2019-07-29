@@ -3,6 +3,25 @@
 <title>fFastInjector</title>
 </head>
 <body>
-  fFastInjector
+<p><strong>Project Description</strong><br />fFastInjector is a high-performing dependency injector, service locator, and/or IOC (inversion of control) container.<br /><br />It is designed to be very efficient in both lines of code and in actual operations.</p>
+<p>See also my&nbsp;<a href="http://g.grax.com/10owfFF">blog - coding.grax.com</a>&nbsp;and&nbsp;<a href="http://g.grax.com/11xRLKr">www.grax.com</a></p>
+<p><strong>Quick Start For MVC</strong></p>
+<p>Install via NuGet. &nbsp;This command will install both the fFastInjector and the fFastInjector-MVC packages</p>
+<p><code>install-package fFastInjector-MVC</code></p>
+<p>Add the following line to your Application_Start method</p>
+<p><code>fFastInjector.fFastInjectorControllerFactory.RegisterControllerFactory();</code></p>
+<p><code>follow the instructions below to set up resolution for your interfaces.</code></p>
+<p><strong>Quick Start Instructions</strong></p>
+<p>Set resolver for interface</p>
+<p><code>fFastInjector.Injector.SetResolver&lt;MyInterface,&nbsp;MyConcreteClass&gt;();</code></p>
+<p>Resolve interface. &nbsp;If no resolver is set for an interface, an exception is thrown.</p>
+<p><code>var&nbsp;result&nbsp;=&nbsp;Injector.Resolve&lt;MyInterface&gt;();</code></p>
+<p>Resolve concrete class. &nbsp;If no resolver is set for a concrete class, this class will be resolved by looking for the constructor with the fewest parameters (preference given to the parameterless constructor). &nbsp;If there are parameters, fFastInjector will attempt to resolve them as well. &nbsp;If they cause an infinite loop with their dependencies, fFastInjector will throw an exception.</p>
+<p><code>var&nbsp;result&nbsp;=&nbsp;Injector.Resolve&lt;MyConcreteClass&gt;();</code></p>
+<p>Resolve class or interface and additionally set a property. &nbsp;This first method will simply use fFastInjector to resolve the value for MyProperty based on the type of MyProperty.</p>
+<p><code>fFastInjector.Injector<br />&nbsp; &nbsp; &nbsp;.SetResolver&lt;MyInterface,&nbsp;MyTestClass&gt;()<br />&nbsp; &nbsp; &nbsp;.AddPropertyInjector(v&nbsp;=&gt;&nbsp;v.MyProperty);<br /></code></p>
+<p>Resolve class or interface and additionally set a property. &nbsp;This second method allows you to specify and expression that will be evaluated to set MyProperty.</p>
+<p><code>fFastInjector.Injector<br />&nbsp; &nbsp; &nbsp; .SetResolver&lt;MyInterface,&nbsp;MyTestClass&gt;() &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.AddPropertyInjector(v&nbsp;=&gt;&nbsp;v.MyOtherProperty,&nbsp;()&nbsp;=&gt;&nbsp;new&nbsp;MyPropertyClass());<br /></code></p>
+<p>&nbsp;</p>
 </body>
 </html>
