@@ -70,13 +70,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\fFastInjector\fFastInjector.csproj">
-      <Project>{b56b326f-34b1-4383-89ed-6886b20850e0}</Project>
-      <Name>fFastInjector</Name>
-    </ProjectReference>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <ProjectReference Include="..\fFastInjector\fFastInjectorLib.csproj">
+      <Project>{ced91115-8e74-4ffb-817f-7650fee7cb05}</Project>
+      <Name>fFastInjectorLib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

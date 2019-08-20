@@ -8,30 +8,20 @@ using System.Web;
 
 namespace fFastInjector
 {
-    public class PerConnectionLifetimeManager<T> : Injector.ILifetimeManager<T>
+    public class PerConnectionLifetimeManager<T> : LifetimeManager<T>
         where T : class
     {
-        Func<T> _resolver = () => { throw new Exception("No resolver has been set for type " + typeof(T).Name); };
-        string _typeName = FancyTypeName(typeof(T));
+        private Func<T> _resolver = () => { throw new Exception("No resolver has been set for type " + typeof(T).Name); };
+        private readonly string _typeName = Injector.FancyTypeName(typeof(T));
 
-        static T GetContextItemForConnection(HttpContext httpContext, string contextItemName, Func<T> newContextItemFunction)
+        private static T GetContextItemForConnection(HttpContext httpContext, string contextItemName, Func<T> newContextItemFunction)
         {
-            if (httpContext != null && httpContext.Items[contextItemName] == null)
+            if (httpContext.Items[contextItemName] == null)
             {
                 httpContext.Items[contextItemName] = newContextItemFunction();
             }
 
             return httpContext.Items[contextItemName] as T;
-        }
-
-        static string FancyTypeName(Type type)
-        {
-            var typeName = type.Name.Split('`')[0];
-            if (type.IsGenericType)
-            {
-                typeName += string.Format(CultureInfo.CurrentCulture, "<{0}>", string.Join(",", type.GetGenericArguments().Select(v => FancyTypeName(v)).ToArray()));
-            }
-            return typeName;
         }
 
         public T GetValue()

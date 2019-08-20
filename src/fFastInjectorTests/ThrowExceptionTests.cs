@@ -17,12 +17,12 @@ namespace fFastInjectorTests
             {
                 Injector.Resolve<IThrowInterface>();
             }
-            catch (Injector.fFastInjectorException exc)
+            catch (fFastInjectorException exc)
             {
                 ex = exc;
             }
 
-            Assert.IsInstanceOfType(ex, typeof(Injector.fFastInjectorException));
+            Assert.IsInstanceOfType(ex, typeof(fFastInjectorException));
             Assert.IsTrue(ex.Message.Contains("Interface"));
         }
 
@@ -34,12 +34,12 @@ namespace fFastInjectorTests
             {
                 Injector.Resolve<IQueryable<IThrowInterface>>();
             }
-            catch (Injector.fFastInjectorException exc)
+            catch (fFastInjectorException exc)
             {
                 ex = exc;
             }
 
-            Assert.IsInstanceOfType(ex, typeof(Injector.fFastInjectorException));
+            Assert.IsInstanceOfType(ex, typeof(fFastInjectorException));
             Assert.IsTrue(ex.Message.Contains("Interface"));
         }
 
@@ -51,12 +51,12 @@ namespace fFastInjectorTests
             {
                 Injector.Resolve<NoConstructor>();
             }
-            catch (Injector.fFastInjectorException exc)
+            catch (fFastInjectorException exc)
             {
                 ex = exc;
             }
 
-            Assert.IsInstanceOfType(ex, typeof(Injector.fFastInjectorException));
+            Assert.IsInstanceOfType(ex, typeof(fFastInjectorException));
             Assert.IsTrue(ex.Message.Contains("Constructor"));
         }
 
@@ -67,11 +67,11 @@ namespace fFastInjectorTests
         [TestMethod]
         public void ExceptionTypeTest()
         {
-            var ex1 = new Injector.fFastInjectorException();
+            var ex1 = new fFastInjectorException();
             Assert.IsTrue(ex1.Message.Contains("error"));
 
             var msg = "Some Error Message";
-            var ex2 = new Injector.fFastInjectorException(msg);
+            var ex2 = new fFastInjectorException(msg);
             Assert.AreEqual(msg, ex2.Message);
         }
 

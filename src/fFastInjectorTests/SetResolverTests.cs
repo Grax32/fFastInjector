@@ -16,11 +16,9 @@ namespace fFastInjectorTests
             Injector.SetResolver<I1, C1>();
             Injector.SetResolver<I2, C2>(Injector.ToPropertyAssignmentExpression((C2 v) => v.Name, () => "Horace"));
             Injector.SetResolver<I3>(() => new C3());
-            Injector.SetResolver<I4>(typeof(C4).GetConstructor(new Type[] { typeof(I2), typeof(I3) }));
-            Injector.SetResolver<I5, C5>(Injector.LifetimeManager<I5>.Singleton);
-            Injector.SetResolver<I6, C6>(Injector.LifetimeManager<I6>.Singleton, Injector.ToPropertyAssignmentExpression((C6 v) => v.Name, () => "Michael"));
-            Injector.SetResolver<I7>(Injector.LifetimeManager<I7>.Singleton, () => new C7());
-            Injector.SetResolver<I8>(Injector.LifetimeManager<I8>.Singleton, typeof(C8).GetConstructor(new Type[] { typeof(I2), typeof(I3) }));
+            Injector.SetResolver<I5, C5>(SingletonLifetimeManager<I5>.Instance);
+            Injector.SetResolver<I6, C6>(SingletonLifetimeManager<I6>.Instance, Injector.ToPropertyAssignmentExpression((C6 v) => v.Name, () => "Michael"));
+            Injector.SetResolver<I7>(SingletonLifetimeManager<I7>.Instance, () => new C7());
 
             Injector.SetSingletonResolver<I9, C9>();
             Injector.SetSingletonResolverAsInstance<I10>(MyI10Instance);

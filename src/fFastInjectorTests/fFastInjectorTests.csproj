@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -8,7 +8,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>fFastInjectorTests</RootNamespace>
     <AssemblyName>fFastInjectorTests</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -20,6 +20,7 @@
     <SccLocalPath>SAK</SccLocalPath>
     <SccAuxPath>SAK</SccAuxPath>
     <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -82,12 +83,8 @@
     <Compile Include="FluentTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\fFastInjector-PowerTools\fFastInjector-PowerTools.csproj">
-      <Project>{11034be9-abcd-484e-8d09-dac886415b24}</Project>
-      <Name>fFastInjector-PowerTools</Name>
-    </ProjectReference>
     <ProjectReference Include="..\fFastInjector\fFastInjector.csproj">
-      <Project>{b56b326f-34b1-4383-89ed-6886b20850e0}</Project>
+      <Project>{ced91115-8e74-4ffb-817f-7650fee7cb05}</Project>
       <Name>fFastInjector</Name>
     </ProjectReference>
   </ItemGroup>

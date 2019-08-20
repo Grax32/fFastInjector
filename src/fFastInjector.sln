@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29201.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestsAndTestRigs", "TestsAndTestRigs", "{93362A04-CB35-438F-840A-D4A097677F9F}"
 EndProject
@@ -9,8 +9,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		Performance1.psess = Performance1.psess
 	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fFastInjector", "fFastInjector\fFastInjector.csproj", "{B56B326F-34B1-4383-89ED-6886B20850E0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fFastInjectorTests", "fFastInjectorTests\fFastInjectorTests.csproj", "{435C522F-EDA0-4B79-9311-8A8EC26D4DB5}"
 EndProject
@@ -34,37 +32,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NuGetPackages", "NuGetPacka
 		NugetPackages\fFastInjector.1.0.1.nupkg = NugetPackages\fFastInjector.1.0.1.nupkg
 	EndProjectSection
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "fFastInjector", "fFastInjector\fFastInjector.csproj", "{CED91115-8E74-4FFB-817F-7650FEE7CB05}"
+EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 8
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs21
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = fFastInjector\\fFastInjector.csproj
-		SccLocalPath1 = .
-		SccProjectFilePathRelativizedFromConnection1 = fFastInjector\\
-		SccProjectUniqueName2 = fFastInjectorTests\\fFastInjectorTests.csproj
-		SccProjectTopLevelParentUniqueName2 = fFastInjector.sln
-		SccProjectName2 = fFastInjectorTests
-		SccLocalPath2 = fFastInjectorTests
-		SccProjectUniqueName3 = fFastInjector-MVC\\fFastInjector-MVC.csproj
-		SccProjectName3 = fFastInjector-MVC
-		SccLocalPath3 = fFastInjector-MVC
-		SccProjectUniqueName4 = fFastInjector-PowerTools\\fFastInjector-PowerTools.csproj
-		SccProjectName4 = fFastInjector-PowerTools
-		SccLocalPath4 = fFastInjector-PowerTools
-		SccProjectUniqueName5 = ExecutableHost\\ExecutableHost.csproj
-		SccProjectTopLevelParentUniqueName5 = fFastInjector.sln
-		SccProjectName5 = ExecutableHost
-		SccLocalPath5 = ExecutableHost
-		SccProjectUniqueName6 = Documentation\\fFastInjectorDocumentation.shfbproj
-		SccProjectName6 = Documentation
-		SccLocalPath6 = Documentation
-		SccProjectUniqueName7 = DocumentationSampleCode\\DocumentationSampleCode.csproj
-		SccProjectTopLevelParentUniqueName7 = fFastInjector.sln
-		SccProjectName7 = DocumentationSampleCode
-		SccLocalPath7 = DocumentationSampleCode
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		CreateDocs|Any CPU = CreateDocs|Any CPU
 		Debug|Any CPU = Debug|Any CPU
@@ -72,14 +42,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B56B326F-34B1-4383-89ED-6886B20850E0}.CreateDocs|Any CPU.ActiveCfg = CreateDocs|Any CPU
-		{B56B326F-34B1-4383-89ED-6886B20850E0}.CreateDocs|Any CPU.Build.0 = CreateDocs|Any CPU
-		{B56B326F-34B1-4383-89ED-6886B20850E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B56B326F-34B1-4383-89ED-6886B20850E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B56B326F-34B1-4383-89ED-6886B20850E0}.DebugRegression|Any CPU.ActiveCfg = DebugRegression|Any CPU
-		{B56B326F-34B1-4383-89ED-6886B20850E0}.DebugRegression|Any CPU.Build.0 = DebugRegression|Any CPU
-		{B56B326F-34B1-4383-89ED-6886B20850E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B56B326F-34B1-4383-89ED-6886B20850E0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{435C522F-EDA0-4B79-9311-8A8EC26D4DB5}.CreateDocs|Any CPU.ActiveCfg = CreateDocs|Any CPU
 		{435C522F-EDA0-4B79-9311-8A8EC26D4DB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{435C522F-EDA0-4B79-9311-8A8EC26D4DB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
@@ -121,6 +83,14 @@ Global
 		{C4B721FC-199A-48CB-9864-AF442D89C93A}.DebugRegression|Any CPU.ActiveCfg = DebugRegression|Any CPU
 		{C4B721FC-199A-48CB-9864-AF442D89C93A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C4B721FC-199A-48CB-9864-AF442D89C93A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CED91115-8E74-4FFB-817F-7650FEE7CB05}.CreateDocs|Any CPU.ActiveCfg = Debug|Any CPU
+		{CED91115-8E74-4FFB-817F-7650FEE7CB05}.CreateDocs|Any CPU.Build.0 = Debug|Any CPU
+		{CED91115-8E74-4FFB-817F-7650FEE7CB05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CED91115-8E74-4FFB-817F-7650FEE7CB05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CED91115-8E74-4FFB-817F-7650FEE7CB05}.DebugRegression|Any CPU.ActiveCfg = Debug|Any CPU
+		{CED91115-8E74-4FFB-817F-7650FEE7CB05}.DebugRegression|Any CPU.Build.0 = Debug|Any CPU
+		{CED91115-8E74-4FFB-817F-7650FEE7CB05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CED91115-8E74-4FFB-817F-7650FEE7CB05}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -130,6 +100,9 @@ Global
 		{9BD70A9B-118D-44EB-90D3-10327BEE85D1} = {93362A04-CB35-438F-840A-D4A097677F9F}
 		{C4B721FC-199A-48CB-9864-AF442D89C93A} = {93362A04-CB35-438F-840A-D4A097677F9F}
 		{D7261DE1-B102-4400-919C-BAB7CE73719E} = {F5B9958D-C852-42F9-9267-1F56F7A723EA}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D39085FD-F952-40A2-B210-7C7795855CEB}
 	EndGlobalSection
 	GlobalSection(NDepend) = preSolution
 		Project = ".\fFastInjector.ndproj"
